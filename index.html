@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rebaño de Cristo</title>
+    <style>
+        body {
+            background-image: url('oile-in-vis.jpg');
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        img.logo {
+            width: 200px;
+            height: 200px;
+            margin-top: 20px;
+            border-radius: 50%;
+        }
+        ul {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4a0d9b;
+    top: 0;
+    }
+
+    .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+/* Modal Content */
+.modal-content {
+  background-image: url(profile1.jpeg);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: justify;
+}
+.perfil {
+  position: relative;
+  margin: auto;
+  left: 200px;
+  width: 200px;
+  height: 200px;
+  top: -280px;
+  border-radius: 50%;
+}
+p {
+    color: #000;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+    li {
+    float: left;
+    }
+    
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 13px;
+    text-decoration: none;
+    
+    
+    }
+    
+    li a:hover {
+    background-color: #111;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        }
+        
+        li {
+        margin-right: 10px;
+        }
+        
+        a {
+        color: white;
+        text-decoration: none;
+        }
+        
+        
+        @media (max-width: 768px) {
+          .perfil {
+  position: relative;
+  margin: auto;
+  left: 50px;
+  
+  top: 20px;
+}
+            
+            ul {
+                background-color: #11a83e;
+            }
+        
+        li {
+        margin-bottom: 1px;
+        }
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+        }
+        h2 {
+          position: relative;
+          top: -50px;
+            font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+        }
+            
+            
+        
+        .copy {
+            color: #f5f2f2;
+            font: italic normal 800 16px Arial, Verdana, sans-serif;
+        }
+        .tul {
+            color: #d31c1c;
+        }
+        .boton1 {
+          background-color: #3beb70;
+        }
+        .boton2 {
+          background-color: #fa2828;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Lunes:     <button class="boton2">Cerrado</button></p>
+          <p>Martes:    <button class="boton2">Cerrado</button></p>
+          <p>Miercoles: <button class="boton1">18:00</button></p>
+          <p>Jueves:    <button class="boton2">Cerrado</button></p>
+          <p>Viernes:   <button class="boton2">Cerrado</button></p></p>
+          <p>Sábado:    <button class="boton2">Cerrado</button></p></p>
+          <p>Doningo:   <button class="boton1">16:00</button></p></p>
+          <img class="perfil" src="profile1.jpeg" alt="">
+        </div>
+      </div>
+    <img src="profile1.jpeg" alt="Logo de la Radio" class="logo">
+    <h1>Iglesia</h1>
+    <h2>El Rebaño de Cristo</h2>
+    <audio controls>
+        <source src="https://stream.zeno.fm/qf25rxnkmorvv" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <ul>
+        <li><a  href="#">Inicio</a></li>
+        <li><a id="myBtn" href="#">Cultos</a></li>
+        <li><a id="miBoton3" href="https://maps.app.goo.gl/HiMBVxEBdTBSMAYV8">Sucursal</a></li>
+        </ul>
+       <!--<a href="https://wa.me/595986678727/?text=Paz del señor..." target="_blank">
+          <img src="" width="50" height="50">
+       </a>-->
+        
+            <a class="copy" href="https://www.instagram.com/cristhian.aquin/">© Página web creada por @Cristhian Aquino © 2024.</a></p>
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+                
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+                
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                
+                // When the user clicks the button, open the modal 
+                btn.onclick = function() {
+                  modal.style.display = "block";
+                }
+                
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+</body>
+</html>
